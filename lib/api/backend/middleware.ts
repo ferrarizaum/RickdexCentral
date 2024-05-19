@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { NextHandler, createRouter } from "next-connect";
-import { NodeRouter } from "../../../../node_modules/next-connect/dist/types/node";
+import { NodeRouter } from "../../../node_modules/next-connect/dist/types/node";
 
 export const baseHandler = (
   router: NodeRouter<NextApiRequest, NextApiResponse>

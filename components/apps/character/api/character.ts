@@ -1,5 +1,5 @@
 import { NextJSClient } from "@/api/client";
-import { exportData } from "@/components/lib/api/frontend/parserClient";
+import { exportData } from "@/lib/api/frontend/parserClient";
 import { GetCharacterInfoResponse } from "@/pages/api/character/route";
 
 export const getCharacterInfo = async () =>
