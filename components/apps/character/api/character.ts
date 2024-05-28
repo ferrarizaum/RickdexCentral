@@ -3,6 +3,6 @@ import { exportData } from "@/lib/api/frontend/parserClient";
 import { GetCharacterInfoResponse } from "@/pages/api/character/route";
 
 export const getCharacterInfo = async () =>
-  await NextJSClient.get<GetCharacterInfoResponse>(`character`).then(
+  await NextJSClient.get<GetCharacterInfoResponse>(`character/route`).then(
     exportData
   );
