@@ -1,7 +1,7 @@
 import { RickdexAPIClient } from "../client";
 
 type CharacterResults = {
-  results: CharacterInfo;
+  results: CharacterInfo[];
 };
 
 type CharacterInfo = {
@@ -14,4 +14,4 @@ type CharacterInfo = {
 };
 
 export const apiGetCharacterInfo = async () =>
-  await RickdexAPIClient.get<CharacterResults[]>(`character`);
+  await RickdexAPIClient.get<CharacterResults>(`character`);

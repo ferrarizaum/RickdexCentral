@@ -10,8 +10,14 @@ export const Card = () => {
   console.log(data);
   return (
     <>
-      <p>Teste</p>
-      <p></p>
+      <div style={{ display: "flex" }}>
+        {data?.results.map((e) => (
+          <div style={{ margin: 5, padding: 5 }}>
+            <h3>{e.name}</h3>
+            <p>{e.species}</p>
+          </div>
+        ))}
+      </div>
     </>
   );
 };
