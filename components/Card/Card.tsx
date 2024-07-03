@@ -4,15 +4,16 @@ import { useQuery } from "@tanstack/react-query";
 
 export const Card = () => {
   const { data } = useQuery({
-    queryKey: ["characterInfo"], // Define your query key here
-    queryFn: getCharacterInfo, // Pass your fetch function here
+    queryKey: ["characterInfo"],
+    queryFn: getCharacterInfo,
   });
   console.log(data);
   return (
     <>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
         {data?.results.map((e) => (
           <div style={{ margin: 5, padding: 5 }}>
+            <img src={e.image} />
             <h3>{e.name}</h3>
             <p>{e.species}</p>
           </div>
