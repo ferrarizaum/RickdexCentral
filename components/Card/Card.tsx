@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { getCharacterInfo } from "../apps/character/api/character";
 import { useQuery } from "@tanstack/react-query";
 
